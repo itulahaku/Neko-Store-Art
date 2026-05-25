@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEKO Store — Rank Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <div class="logo-img">
+            <img src="https://www.image2url.com/r2/default/images/1779091170575-9085130b-74ea-4be1-a264-db34b048eb8c.png" alt="Minecraft Logo" height="70" style="border-radius:12px;box-shadow:0 2px 8px #0002;">
+        </div>
+        <div class="logo-text">
+          <h1 class="logo-title">NEKO Store</h1>
+          <span class="logo-sub">Official art Shop</span>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        Server Online
+      </div>
+    </div>
+
+    <div class="header-hero">
+      <div class="icon">
+        <img src="https://www.image2url.com/r2/default/gifs/1779684300408-818f6ca1-ef56-4a91-853a-6c70bfffb51b.gif" alt="Minecraft Logo" height="70" style="border-radius:12px;box-shadow:0 2px 8px #0002;">
+      </div>
+      <p class="hero-label">✦ EXCLUSIVE ART ✦</p>
+      <h2 class="hero-title">Upgrade Your Art<br /><span class="hero-highlight"></span></h2>
+      <p class="hero-desc">Temukan berbagai layanan komisi artwork berkualitas dari para kreator berbakat. Pilih gaya seni yang sesuai dengan kebutuhanmu dan wujudkan ide menjadi karya yang menarik.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-lbl">stayle tersedia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-lbl">Support</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Terpercaya</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="section-label">
+      <span class="section-line"></span>
+      <span class="section-text">Pilih stayle mu</span>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="cards-grid" id="rankGrid">
+    
+    </div>
+  </main>
+<main class="main-content">
+  <div class="section-label">
+    <span class="section-line"></span>
+    <span class="section-text">Pilih stayle mu</span>
+    <span class="section-line"></span>
+  </div>
+  
+  <div style="text-align:center; margin-bottom:30px;">
+    <button
+      onclick="window.location.href='../index.html'"
+      class="btn-image"
+    >
+      <-- Kembali
+    </button>
+  </div>
+
+  <div class="cards-grid" id="rankGrid">
+  </div>
+</main>
+  
+  <footer class="site-footer">
+  
+    <div class="footer-inner">
+      <span class="footer-logo">⛏ NEKO Store</span>
+      <p class="footer-text">Hubungi kami lewat WhatsApp untuk pembelian rank & pertanyaan lainnya.</p>
+      <p class="footer-copy">&copy; 2025 NEKO Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-price" id="modalPrice"></p>
+      <div class="icone">
+        <img src="https://www.image2url.com/r2/default/gifs/1779684793010-e72a009a-5544-4ef9-9370-3e6d2270c39a.gif" alt="Minecraft Logo" height="70" style="border-radius:12px;box-shadow:0 2px 8px #0002;">
+        <img src="https://www.image2url.com/r2/default/gifs/1779684300408-818f6ca1-ef56-4a91-853a-6c70bfffb51b.gif" alt="Minecraft Logo" height="70" style="border-radius:12px;box-shadow:0 2px 8px #0002;">
+      </div>
+      
+      <p class="modal-desc">Kamu akan diarahkan ke WhatsApp untuk menyelesaikan pembelian rank ini. Pastikan WhatsApp kamu aktif ya!</p>
+      <div class="modal-actions">
+        <button class="btn-confirm" id="btnConfirm">Lanjut ke WhatsApp</button>
+        <button class="btn-cancel" id="btnCancel">Batal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
